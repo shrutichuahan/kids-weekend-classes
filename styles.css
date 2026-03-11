@@ -1016,7 +1016,7 @@ width: 100%;
  slot-badge{
 position: static;
 width: 90%;
-margin: 10px auto;
+/* margin: 10px auto; */
 text-align:center;
 }
 
@@ -1075,4 +1075,45 @@ height:55px;
 font-size:12px;
 }
 
+}
+/* Small mobile screens */
+@media (min-width:320px) and (max-width:425px){
+
+.price-badge,
+.slot-badge{
+width:140px;        /* smaller width */
+padding:8px 10px;
+font-size:11px;
+border-radius:10px;
+}
+
+.price-main,
+.slot-main{
+font-size:14px;
+}
+
+.price-title,
+.slot-title,
+.price-sub,
+.slot-sub{
+font-size:10px;
+}
+
+/* adjust positions */
+
+.price-badge{
+top:10px;
+left:8px;
+}
+
+.slot-badge{
+top:10px;
+right:8px;
+}
+
+}
+
+.whatsapp-icon{
+width:40px;
+height:40px;
 }
